@@ -1,7 +1,6 @@
 from stack import Stack, StackException
 import unittest
 
-
 class StackTester(unittest.TestCase):
     def setUp(self):
         self.stack = Stack()
