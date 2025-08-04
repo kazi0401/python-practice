@@ -10,7 +10,22 @@
     Return a list containing all numbers that fizzed, buzzed, and fizzbuzzed.
 '''
 # Your implementation here
+def fizzbuzz(n: int) -> list[int]:
+    res = []
+    for i in range(1, n + 1):
+        if i % 3 == 0:
+            print('fizz')
+            res.append(i)
+        elif i % 5 == 0:
+            print('buzz')
+            res.append(i)
+        elif i % 3 == i % 5 == 0:
+            print('fizzbuzz')
+            res.append(i)
 
+    return res
+        
+            
 
 
 
@@ -21,7 +36,12 @@
         Ex. 'python' -> 2
 '''
 # Your implementation here
-
+def vowels(s: str) -> int:
+    num_vowels = 0
+    for char in s.lower():
+        num_vowels += 1
+    return num_vowels
+        
 
 
 '''
@@ -33,6 +53,17 @@
 '''
 # Your implementation here
 
+def reversal(l: list) -> list:
+    rev = []
+    for i in range(len(l) - 1, -1, -1):
+        rev.append(l[i])
+
+    return rev
+
+    # return l[::-1]
+    
+        
+
 
 '''
     Palindrome
@@ -42,6 +73,18 @@
         Return False otherwise
 '''
 # Your implementation here
+
+def is_palindrome(string: str) -> bool:
+
+    left = right = 0
+
+    while (left < right):
+        if string[left] != string[right]:
+            return False
+        else:
+            left += 1
+            right -= 1
+    return True
 
 
 '''
@@ -67,16 +110,7 @@
 # Your implementation here
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    result = fizzbuzz(100)
+    print(result)
+    
