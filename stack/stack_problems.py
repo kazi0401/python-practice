@@ -1,37 +1,11 @@
-
-'''
-    Implement a stack!
-
-    Create a class called Stack with the following methods:
-        pop()
-            returns the element on top of the stack,
-            while also removing it.
-            Raises an exception if there is no element left to pop.
-            
-        push(x)
-            add x to the top of the stack.
-
-        peek()
-            return the element on top of the stack, without removing it
-
-        is_empty()
-            return True if the stack is empty, else False
-
-        size()
-            return the size of the stack.
-
-    Do not use any built-in methods that would make this problem trivial.
-
-'''
-# Your implementation here
-
-
-
 '''
     Reverse a String II
 
     Use the stack implementation to reverse a string.
+
+    Name the function stack_reverse.
 '''
+# Your implementation here
 
 
 '''
@@ -43,6 +17,8 @@
         ([]){} -> True  
         ([)] -> False  
         (((  -> False
+
+    Name the function is_balanced.
 '''
 # Your implementation here
 
@@ -63,12 +39,7 @@
     Each string either represents an integer, or an operator (+, -, *, /)
     Division should be interpreted as integer division (//)
     Don't worry about division by 0.
+
+    Name the function eval_rpn.
 '''
 # Your implementation here
-            
-
-
-
-
-
-    
